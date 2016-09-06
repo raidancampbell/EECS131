@@ -1,6 +1,6 @@
 %% 8.12
 
-function ans = createStudentStruct()
+function ans = createStudentStruct(name, id, gpa)
 
     if ~exist('name', 'var')
         name = 'sir billington';
