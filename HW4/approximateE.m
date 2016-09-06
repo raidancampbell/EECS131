@@ -5,7 +5,7 @@ function approximateE()
     e = exp(1) ^ -1;
     approximation = 0;
     n = 0;
-    while abs(e - approximation > 0.0001)
+    while abs(e - approximation) > 0.0001
         n = n + 1;
         approximation = (1 - (1/n)) ^ n;
     end
