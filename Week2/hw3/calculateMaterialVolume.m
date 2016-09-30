@@ -1,4 +1,4 @@
-%% calculates the volume of a sphere given the inner and outer radii
+%% calculates the volume of a sphere given the inner and outer radii, rac158
 % input: 
 % innerRadius: the inner radius of the sphere
 % outerRadius: the outer radius of the sphere

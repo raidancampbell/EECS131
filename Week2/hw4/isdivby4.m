@@ -1,4 +1,4 @@
-%% 3.28
+%% 3.28, rac158
 % returns whether a number is evenly divisible by 4
 function ans = isdivby4(inputNumber)
 

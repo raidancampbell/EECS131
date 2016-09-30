@@ -1,4 +1,4 @@
-%% 3.15
+%% 3.15 rac158
 % plotting sin(x) with both 10 and 100 points of resolution
 function sinxPlot() 
 

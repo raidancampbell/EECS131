@@ -1,4 +1,4 @@
-%% calculates the length of the third side from two given sides and an angle of a triangle
+%% calculates the length of the third side from two given sides and an angle of a triangle, rac158
 % input: 
 % a: side a of the triangle
 % b: side b of the triangle

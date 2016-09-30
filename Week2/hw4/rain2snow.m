@@ -1,4 +1,4 @@
-%% 3.33
+%% 3.33, rac158
 % converts inches of rain to inches of snow
 
 function rain2snow()

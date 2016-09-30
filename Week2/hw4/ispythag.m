@@ -1,4 +1,4 @@
-%% 3.30
+%% 3.30, rac158
 
 function ans = ispythag(a,b,c)
 
