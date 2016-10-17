@@ -1,15 +1,11 @@
-%% 5.22
-function waitForKeyword()
+%% 5.22 rac158
+% continually query the user for a keyword.
+% this is riveting.
 
-    wordToCheck = input('Enter a MATLAB keyword: ', 's');
-
-    while ~(iskeyword(wordToCheck))
-
-        fprintf(2,'Not a keyword. ');       
-        wordToCheck = input('Enter a MATLAB keyword: ', 's');
-
-    end
-
-    disp([wordToCheck ' is a keyword.']);
+while ~(iskeyword(input('Enter a MATLAB keyword: ', 's')))
+    
+    fprintf(2,'Not a keyword. ');  % stderr so hard
 
 end
+
+disp('Keyword accepted.');

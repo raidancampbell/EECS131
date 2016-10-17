@@ -1,6 +1,6 @@
 %% 8.11
-% 
-function ans = createStudentCellArray(name, id, gpa)
+% rac158
+function student = createStudentCellArray(name, id, gpa)
 
     if ~exist('name', 'var')
         name = 'sir billington';
@@ -12,6 +12,6 @@ function ans = createStudentCellArray(name, id, gpa)
         gpa = 4.01;
     end
     
-    ans = {'name', 'id', 'gpa'; name, id, gpa};
-    disp(ans);
+    student = {'name', 'id', 'gpa'; name, id, gpa};
+    disp(student);
 end

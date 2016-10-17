@@ -1,5 +1,5 @@
-
-function str = homemadeBlanks(n)
+% 7.10 rac158
+function str = myblanks(n)
 
     i = 0;
     str = '';

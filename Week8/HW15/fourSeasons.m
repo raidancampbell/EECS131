@@ -1,9 +1,9 @@
-%% 8.28
+%% 8.28 rac158
 % an ordinal categorical array storing the four seasons
-function ans = fourSeasons()
+function seasons = fourSeasons()
 
     valueset = {'Spring', 'Summer', 'Fall', 'Winter'};
     
-    ans = categorical(valueset,valueset,'Ordinal',true);
+    seasons = categorical(valueset,valueset,'Ordinal',true);
 
 end

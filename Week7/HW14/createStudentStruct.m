@@ -1,6 +1,6 @@
-%% 8.12
+%% 8.12 rac158
 
-function ans = createStudentStruct(name, id, gpa)
+function student = createStudentStruct(name, id, gpa)
 
     if ~exist('name', 'var')
         name = 'sir billington';
@@ -12,6 +12,6 @@ function ans = createStudentStruct(name, id, gpa)
         gpa = 4.01;
     end
     
-    ans = struct('name', name, 'id', id, 'gpa', gpa);
-    disp(ans);
+    student = struct('name', name, 'id', id, 'gpa', gpa);
+    disp(student);
 end

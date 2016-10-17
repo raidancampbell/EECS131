@@ -4,19 +4,20 @@
 
 % and by "brush off all the dust" I mean "look at wikipedia".
 
-function ans = mydsort(input)
+function sorted = mydsort(input)
 
     if ~exist('input', 'var')
         input = [1 2 3 4 6 0];
     end
     
-    ans = quicksort(input);
+    sorted = quicksort(input);
 
 end
 
+% this implementation is descending
 function array = quicksort(array)
  
-    if length(array) == 0  % recursion base case
+    if isempty(array)  % recursion base case
         return;
     end
 %     last element is the pivot, zero it, because we have our copy
@@ -24,8 +25,8 @@ function array = quicksort(array)
     array(length(array)) = [];
  
 %     rejoin
-    array = [quicksort(array( array <= pivot ))...  % sort everything less than the pivot
-        pivot...  % add the pivot
-        quicksort(array( array > pivot ))];  % sort everything greater than the pivot
+    array = [quicksort(array( array >= pivot ))...  % sort everything less than the pivot
+        pivot...  % append the pivot
+        quicksort(array( array < pivot ))];  % sort everything greater than the pivot
 
 end

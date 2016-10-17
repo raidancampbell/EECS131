@@ -1,4 +1,4 @@
-%% 9.26
+%% 9.26 rac158
 % something something windchill
 
 function t = generateWCFTable(outputFilename)
@@ -11,7 +11,6 @@ function t = generateWCFTable(outputFilename)
     for temp = -20:5:55
        for windspeed = 0:5:55
            c{(windspeed/5)+1, (temp/5)+5} = calculateWCF(temp, windspeed);
-%           wcf = [wcf calculateWCF(temp, windspeed)];
        end
        if temp < 0
            tempStrings = [tempStrings {strcat('below', num2str(abs(temp)))}];
@@ -29,11 +28,7 @@ function t = generateWCFTable(outputFilename)
     t.Properties.VariableNames = tempStrings;
     t.Properties.RowNames = speedStrings;
     
-    if ~exist('outputFilename', 'var')
-        outputFilename = 'windchill.txt';
-    end
-    
-    writetable(t,outputFilename);
+    writetable(t,'windchill.txt');
     
 end
 

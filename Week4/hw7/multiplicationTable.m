@@ -1,12 +1,8 @@
-%% 5.16
+%% 5.16 rac158
 % prints out a pretty table of numbers
-function multiplicationTable()
-
-    for i = 1:1:5
-       for j = 1:1:i
-          fprintf(1, '%d ', i*j);
-       end
-       fprintf(1, '\n');
-    end
-
+% now with minor code golfing.
+clear;
+for i=1:5
+fprintf(1,'%d ',i*(1:i));
+fprintf(1,'\n');
 end

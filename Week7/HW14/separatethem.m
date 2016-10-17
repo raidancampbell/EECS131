@@ -1,4 +1,4 @@
-%% 8.18
+%% 8.18 rac158
 % given a struct with fields 'length' and 'width', return the fields as a vector
 function [length, width] = separatethem(inputStruct)
     

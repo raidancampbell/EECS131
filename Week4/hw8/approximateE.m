@@ -1,17 +1,14 @@
-%% 5.20
+%% 5.20 rac158
 % iterative calculation of `e`
-function approximateE()
-
-    e = exp(1) ^ -1;
-    approximation = 0;
-    n = 0;
-    while abs(e - approximation) > 0.0001
-        n = n + 1;
-        approximation = (1 - (1/n)) ^ n;
-    end
-    
-    disp(['actual value: ' num2str(e)]);
-    disp(['calculated value: ' num2str(approximation)]);
-    disp(['iterations required: ' num2str(n)]); 
-
+e = exp(1) ^ -1;
+approximation = 0;
+n = 0;
+while abs(e - approximation) > 0.0001
+    n = n + 1;
+    approximation = (1 - (1/n)) ^ n;
 end
+
+fprintf('actual value: %d\n', e);
+fprintf('calculated value: %d\n', approximation);
+fprintf('iterations required: %d\n', n); 
+

@@ -1,12 +1,12 @@
-%%  6.22
-
-function ans = per2(toAdd)
+%%  6.22 rac158
+% persistant addition.  woo.
+function ret_var = per2(toAdd)
 
     persistent sum;
     if isempty(sum)
         sum = 0;
     end
     sum = sum + toAdd;
-    ans = sum
+    ret_var = sum
 
 end

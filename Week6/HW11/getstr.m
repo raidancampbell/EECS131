@@ -1,4 +1,4 @@
-%% 7.2
+%% 7.2 rac158
 % pokes the user until they give a nonzero-length string
 function theString = getstr()
 
