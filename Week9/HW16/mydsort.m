@@ -1,4 +1,4 @@
-%% 8.30
+%% 8.30 rac168
 % manually sorts a vector in descending order
 % oh man, it's time to brush off all the dust from the sorting algorithms
 
